@@ -15,6 +15,15 @@ const Login: React.FC = () => {
           <Input label="password" type={"password"} />
         </InputContainer>
         <Button>Sign in</Button>
+        <span className="text-primary.light text-sm font-light my-2">
+          Forgot your password?
+        </span>
+        <span className="text-on-background.light mt-6 tracking-wide">
+          Don't have an account? Create one{" "}
+          <a className="text-primary.light" href="/auth/register">
+            here
+          </a>
+        </span>
       </div>
     </div>
   );

@@ -571,6 +571,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -789,6 +793,10 @@ video {
   font-weight: 300;
 }
 
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
 .text-on-primary\.light{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -805,6 +813,16 @@ video {
 }
 
 .text-on-surface\.light{
+  --tw-text-opacity: 1;
+  color: rgb(32 26 23 / var(--tw-text-opacity));
+}
+
+.text-primary\.light{
+  --tw-text-opacity: 1;
+  color: rgb(146 76 0 / var(--tw-text-opacity));
+}
+
+.text-on-background\.light{
   --tw-text-opacity: 1;
   color: rgb(32 26 23 / var(--tw-text-opacity));
 }
