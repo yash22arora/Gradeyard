@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
@@ -419,7 +421,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -466,7 +468,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -513,50 +515,146 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-screen {
+.m-2{
+  margin: 0.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-screen{
   height: 100vh;
 }
 
-.max-h-screen {
+.max-h-screen{
   max-height: 100vh;
 }
 
-.w-screen {
+.w-screen{
   width: 100vw;
 }
 
-.w-full {
+.w-full{
   width: 100%;
 }
 
-.overflow-hidden {
+.w-2\/5{
+  width: 40%;
+}
+
+.min-w-\[600px\]{
+  min-width: 600px;
+}
+
+.min-w-\[300px\]{
+  min-width: 300px;
+}
+
+.min-w-\[400px\]{
+  min-width: 400px;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.overflow-hidden{
   overflow: hidden;
 }
 
-.bg-background\.light {
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
+.bg-background\.light{
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 255 / var(--tw-bg-opacity));
 }
 
-.bg-primary\.light {
+.bg-primary\.light{
   --tw-bg-opacity: 1;
   background-color: rgb(146 76 0 / var(--tw-bg-opacity));
 }
 
-.p-4 {
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-tertiary-container\.light{
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 231 175 / var(--tw-bg-opacity));
+}
+
+.p-4{
   padding: 1rem;
 }
 
-.text-center {
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.text-center{
   text-align: center;
 }
 
-.text-3xl {
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-on-primary\.light {
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.text-on-primary\.light{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-on-tertiary-container\.light{
+  --tw-text-opacity: 1;
+  color: rgb(26 29 0 / var(--tw-text-opacity));
+}
+
+* {
+  font-family: "Nunito", sans-serif;
 }
