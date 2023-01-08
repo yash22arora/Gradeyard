@@ -515,8 +515,27 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .m-2{
   margin: 0.5rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mr-2{
@@ -529,6 +548,22 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[1px\]{
+  height: 1px;
+}
+
+.h-\[2px\]{
+  height: 2px;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
+.h-4{
+  height: 1rem;
 }
 
 .max-h-screen{
@@ -591,6 +626,10 @@ video {
   border-radius: 0.125rem;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .bg-background\.light{
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 255 / var(--tw-bg-opacity));
@@ -611,6 +650,15 @@ video {
   background-color: rgb(227 231 175 / var(--tw-bg-opacity));
 }
 
+.bg-outline\.light{
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 116 106 / var(--tw-bg-opacity));
+}
+
+.bg-inherit{
+  background-color: inherit;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -621,6 +669,15 @@ video {
 
 .p-2{
   padding: 0.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .text-center{
@@ -635,6 +692,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-semibold{
@@ -653,6 +715,11 @@ video {
 .text-on-tertiary-container\.light{
   --tw-text-opacity: 1;
   color: rgb(26 29 0 / var(--tw-text-opacity));
+}
+
+.text-outline\.light{
+  --tw-text-opacity: 1;
+  color: rgb(132 116 106 / var(--tw-text-opacity));
 }
 
 * {
