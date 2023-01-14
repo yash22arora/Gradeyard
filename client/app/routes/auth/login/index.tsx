@@ -20,7 +20,7 @@ const Login: React.FC = () => {
         </span>
         <span className="text-on-background.light mt-6 tracking-wide">
           Don't have an account? Create one{" "}
-          <a className="text-primary.light" href="/auth/register">
+          <a className="text-primary.light" href="/auth/signup">
             here
           </a>
         </span>

@@ -7,7 +7,7 @@ const Signup: React.FC = () => {
         <Outlet />
         <span className="text-on-background.light mt-6 tracking-wide">
           Already have an account? Log in{" "}
-          <a className="text-primary.light" href="/auth/register">
+          <a className="text-primary.light" href="/auth/login">
             here
           </a>
         </span>
