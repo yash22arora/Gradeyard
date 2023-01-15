@@ -8,14 +8,18 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from "./styles/app.css";
+import logo from "./assets/logo.png";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "icon", href: logo },
+  ];
 }
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Gradeyard",
   viewport: "width=device-width,initial-scale=1",
 });
 

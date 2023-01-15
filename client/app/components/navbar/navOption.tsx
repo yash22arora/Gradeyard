@@ -8,7 +8,7 @@ const NavOption: React.FC<INavOptionProps> = ({
   data,
 }) => {
   const activeClass = isActive
-    ? "bg-primary.light text-white"
+    ? "bg-primary.light text-white text-opacity-100"
     : "text-on-surface-variant.light";
   const hoverClass = isActive
     ? ""
@@ -19,11 +19,15 @@ const NavOption: React.FC<INavOptionProps> = ({
     <Link
       to={option.path}
       key={option.id}
-      className={`h-full flex flex-col flex-grow px-6 mx-2 pt-12 pb-6 rounded-b-lg font-semibold ${hoverClass} ${activeClass} navLink`}
+      className={`h-full flex flex-col flex-grow px-6 mx-2 pt-10 pb-5 rounded-b-lg font-semibold transition-all duration-200 text-opacity-70 ${hoverClass} ${activeClass} navLink`}
     >
       {option.name}
       {option.hasData ? (
-        <span className={`text-sm font-normal ${dataClass} `}>{data}</span>
+        <span
+          className={`text-sm font-normal transition-all duration-200 ${dataClass} `}
+        >
+          {data}
+        </span>
       ) : (
         <span className={`text-sm invisible`}>.</span>
       )}

@@ -8,12 +8,12 @@ const Navbar: React.FC = () => {
   const data = [" ", 5, 6];
 
   return (
-    <nav className="w-full px-28 bg-white navShadow h-32">
+    <nav className="w-full px-28 bg-white navShadow h-28">
       <div className="flex flox-row justify-start items-center w-full mb-2">
         <Link to="/">
           <img src={NavLogo} alt="logo" className="h-16" />
         </Link>
-        <div className="flex flex-row items-center h-full pl-24">
+        <div className="flex flex-row items-center h-full pl-16">
           {NavOptions.map((option, idx) => (
             <NavOption
               key={option.id}
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             />
           ))}
         </div>
-        <div className="ml-auto flex flex-row items-center mt-2 cursor-pointer">
+        <div className="ml-auto flex flex-row items-center my-auto cursor-pointer">
           <span className="font-semibold text-primary.light">
             yashvardhan2210
           </span>
