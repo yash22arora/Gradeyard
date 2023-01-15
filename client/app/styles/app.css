@@ -532,6 +532,11 @@ video {
   margin-right: 0.5rem;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -542,21 +547,12 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
 }
 
 .ml-auto{
   margin-left: auto;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .ml-4{
@@ -579,6 +575,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -595,8 +595,8 @@ video {
   height: 100%;
 }
 
-.h-32{
-  height: 8rem;
+.h-28{
+  height: 7rem;
 }
 
 .h-16{
@@ -611,8 +611,12 @@ video {
   height: 2px;
 }
 
-.h-28{
-  height: 7rem;
+.h-0{
+  height: 0px;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .max-h-screen{
@@ -633,6 +637,10 @@ video {
 
 .min-w-\[400px\]{
   min-width: 400px;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 .flex-grow{
@@ -743,6 +751,11 @@ video {
   padding: 0.5rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -763,16 +776,14 @@ video {
   padding-right: 0.25rem;
 }
 
-.pt-12{
-  padding-top: 3rem;
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-
-.pl-24{
+.px-24{
   padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .pt-10{
@@ -781,10 +792,6 @@ video {
 
 .pb-5{
   padding-bottom: 1.25rem;
-}
-
-.pl-20{
-  padding-left: 5rem;
 }
 
 .pl-16{
@@ -880,12 +887,18 @@ video {
   color: rgb(32 26 23 / var(--tw-text-opacity));
 }
 
+.text-opacity-100{
+  --tw-text-opacity: 1;
+}
+
 .text-opacity-70{
   --tw-text-opacity: 0.7;
 }
 
-.text-opacity-100{
-  --tw-text-opacity: 1;
+.shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline{
@@ -920,6 +933,10 @@ video {
 
 .navLink:hover > .navDataText {
   color: rgb(146 76 0);
+}
+
+.slateShadow {
+  box-shadow: 0px 0px 50px 1px rgba(46, 21, 2, 0.05);
 }
 
 .hover\:bg-primary\.light:hover{

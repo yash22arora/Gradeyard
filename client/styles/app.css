@@ -15,3 +15,7 @@
 .navLink:hover > .navDataText {
   color: rgb(146 76 0);
 }
+
+.slateShadow {
+  box-shadow: 0px 0px 50px 1px rgba(46, 21, 2, 0.05);
+}

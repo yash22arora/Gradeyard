@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
   const data = [" ", 5, 6];
 
   return (
-    <nav className="w-full px-28 bg-white navShadow h-28">
-      <div className="flex flox-row justify-start items-center w-full mb-2">
+    <nav className="w-full px-12 bg-white navShadow h-28 flex items-center justify-center">
+      <div className="flex flox-row justify-start items-center max-w-7xl w-full mb-2">
         <Link to="/">
-          <img src={NavLogo} alt="logo" className="h-16" />
+          <img src={NavLogo} alt="logo" className="h-8 mb-1" />
         </Link>
         <div className="flex flex-row items-center h-full pl-16">
           {NavOptions.map((option, idx) => (
