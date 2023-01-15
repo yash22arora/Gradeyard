@@ -827,6 +827,21 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -841,6 +856,18 @@ video {
 
 .font-light{
   font-weight: 300;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .tracking-wide{
