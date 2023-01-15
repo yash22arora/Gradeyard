@@ -5,7 +5,7 @@ const Slate: React.FC<ISlateProps> = (props) => {
   const shadowClass = shadow ? "slateShadow" : "";
   return (
     <div
-      className={`bg-white p-4 py-3 my-4 w-full rounded-md flex flex-col items-center justify-center ${shadowClass} ${className}`}
+      className={`bg-white p-4 py-3 my-4 w-full rounded-md ${shadowClass} ${className}`}
     >
       {props.children}
     </div>
