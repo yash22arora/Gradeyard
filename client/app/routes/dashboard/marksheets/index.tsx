@@ -24,19 +24,19 @@ const dummyData = [
     id: 4,
     orderId: "4.",
     name: "Makethon 4.0",
-    status: "Compiled",
+    status: "Draft",
   },
   {
     id: 5,
     orderId: "5.",
     name: "MUJ Designathon",
-    status: "Compiled",
+    status: "Draft",
   },
   {
     id: 6,
     orderId: "6.",
     name: "Hackowasp 3.0",
-    status: "Compiled",
+    status: "Pending",
   },
   {
     id: 7,

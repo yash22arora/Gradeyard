@@ -1,10 +1,11 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import NavLogo from "../../assets/logo_full.png";
 import { NavOptions } from "./config";
 import NavOption from "./navOption";
 
 const Navbar: React.FC = () => {
-  const link = useParams().link;
+  const location = useLocation();
+  const tab = location.pathname.split("/")[2];
   const data = [" ", 5, 6];
 
   return (
@@ -18,7 +19,7 @@ const Navbar: React.FC = () => {
             <NavOption
               key={option.id}
               option={option}
-              isActive={link === option.id}
+              isActive={tab === option.id}
               data={data[idx]}
             />
           ))}
