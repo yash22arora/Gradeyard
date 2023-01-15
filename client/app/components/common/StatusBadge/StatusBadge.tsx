@@ -13,10 +13,10 @@ const StatusBadge: React.FC<IStatusBadgeProps> = ({ status }) => {
       colorClass = "bg-error.light bg-opacity-40";
       break;
     case "Draft":
-      colorClass = "bg-inverse-surface.light bg-opacity-30";
+      colorClass = "bg-inverse-surface.light bg-opacity-20";
       break;
     default:
-      colorClass = "bg-inverse-surface.light bg-opacity-30";
+      colorClass = "bg-inverse-surface.light bg-opacity-20";
       break;
   }
   return (

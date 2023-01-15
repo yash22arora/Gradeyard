@@ -657,6 +657,10 @@ video {
   max-width: 80rem;
 }
 
+.max-w-6xl{
+  max-width: 72rem;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
@@ -842,6 +846,10 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
+.bg-opacity-20{
+  --tw-bg-opacity: 0.2;
+}
+
 .p-8{
   padding: 2rem;
 }
@@ -927,6 +935,14 @@ video {
 
 .pr-8{
   padding-right: 2rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-center{
