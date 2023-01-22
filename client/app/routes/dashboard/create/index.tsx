@@ -10,8 +10,8 @@ const CreateIndex: React.FC = () => {
       <div className="flex flex-row justify-between items-start mt-6">
         <Slate className=" w-2/3 mr-8 h-screen">
           <div className="flex flex-col items-start px-8 py-8">
-            <Label>Name your marksheet</Label>
-            <Input />
+            <Label htmlFor="marksheet_name">Name your marksheet</Label>
+            <Input id="marksheet_name" />
           </div>
         </Slate>
         <Slate className="w-1/3 ml-8 h-48 sticky top-16"></Slate>

@@ -7,8 +7,8 @@ const Signup2: React.FC = () => {
     <>
       <h1 className="text-3xl self-start mb-6">Create a password</h1>
       <InputContainer>
-        <Input label="Email" disabled value={""} />
-        <Input label="Password" type="password" />
+        <Input variant="secondary" label="Email" disabled value={""} />
+        <Input variant="secondary" label="Password" type="password" />
       </InputContainer>
       <Button
         onClick={() => {

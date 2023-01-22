@@ -7,8 +7,8 @@ const Signup3: React.FC = () => {
     <>
       <h1 className="text-3xl self-start mb-6">What should we call you?</h1>
       <InputContainer>
-        <Input label="First Name" />
-        <Input label="Last Name" />
+        <Input variant="secondary" label="First Name" />
+        <Input variant="secondary" label="Last Name" />
       </InputContainer>
       <Button>Create Account</Button>
     </>

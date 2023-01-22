@@ -11,7 +11,7 @@ const SignupIndex: React.FC = () => {
       <GoogleButton />
       <Divider label="Or" />
       <InputContainer>
-        <Input label="Email" />
+        <Input variant="secondary" label="Email" />
       </InputContainer>
       <Button
         onClick={() => {

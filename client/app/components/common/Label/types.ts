@@ -1,3 +1,6 @@
 import type { HTMLAttributes } from "react";
 
-export interface ILabelProps extends HTMLAttributes<HTMLSpanElement> {}
+// create interface ILabelProps extending attributes for label element
+export interface ILabelProps extends HTMLAttributes<HTMLLabelElement> {
+  htmlFor?: string;
+}

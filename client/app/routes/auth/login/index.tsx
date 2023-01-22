@@ -11,8 +11,8 @@ const Login: React.FC = () => {
         <GoogleButton />
         <Divider label="Or" />
         <InputContainer>
-          <Input label="Username or Email" />
-          <Input label="password" type={"password"} />
+          <Input variant="secondary" label="Username or Email" />
+          <Input variant="secondary" label="password" type={"password"} />
         </InputContainer>
         <Button>Sign in</Button>
         <span className="text-primary.light text-sm font-light my-2">

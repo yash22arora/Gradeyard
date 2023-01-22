@@ -1,10 +1,14 @@
 import type { IInputProps } from "./types";
 
 const Input: React.FC<IInputProps> = (props) => {
-  const { label, type, disabled, ...rest } = props;
+  const { variant = "default", label, type, disabled, ...rest } = props;
   const disabledClass = disabled
     ? "bg-on-tertiary-container.light bg-opacity-12"
     : "";
+  const variantClass =
+    variant === "default"
+      ? "outline-[#191C1C29] bg-[#CCE8E614]"
+      : "outline-outline.light text-outline.light bg-white";
   return (
     <div className="w-full my-4">
       {label ? (
@@ -14,7 +18,7 @@ const Input: React.FC<IInputProps> = (props) => {
       ) : null}{" "}
       <input
         type={type}
-        className={`mt-1 outline outline-[1.5px] outline-outline.light text-outline.light focus:outline-2 w-full rounded-sm text-lg bg-white p-2 ${disabledClass}`}
+        className={`mt-1 outline outline-[1.5px] focus:outline-2 w-full rounded-sm text-lg p-2 ${variantClass}  ${disabledClass}`}
         disabled={disabled}
         {...rest}
       />
