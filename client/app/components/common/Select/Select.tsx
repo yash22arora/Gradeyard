@@ -11,6 +11,8 @@ const Select: React.FC<ISelectProps> = (props) => {
       : "outline-outline.light text-outline.light bg-white";
   return (
     <select
+      {...rest}
+      value={rest.value}
       disabled={rest.disabled}
       className={`mt-1 outline outline-[1.5px] focus:outline-2 w-full rounded-sm text-lg p-2 ${variantClass}  ${disabledClass} ${rest.className}`}
     >
