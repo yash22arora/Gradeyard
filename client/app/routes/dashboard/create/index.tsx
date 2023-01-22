@@ -2,6 +2,7 @@ import Input from "~/components/common/Input";
 import Label from "~/components/common/Label/Label";
 import Slate from "~/components/common/Slate/Slate";
 import Title from "~/components/common/Title/Title";
+import FieldsList from "~/components/create/FieldsList";
 
 const CreateIndex: React.FC = () => {
   return (
@@ -12,6 +13,8 @@ const CreateIndex: React.FC = () => {
           <div className="flex flex-col items-start px-8 py-8">
             <Label htmlFor="marksheet_name">Name your marksheet</Label>
             <Input id="marksheet_name" />
+            <Label className="mt-8">Describe marking fields</Label>
+            <FieldsList />
           </div>
         </Slate>
         <Slate className="w-1/3 ml-8 h-48 sticky top-16"></Slate>

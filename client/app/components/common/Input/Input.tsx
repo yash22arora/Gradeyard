@@ -7,7 +7,7 @@ const Input: React.FC<IInputProps> = (props) => {
     : "";
   const variantClass =
     variant === "default"
-      ? "outline-[#191C1C29] bg-[#CCE8E614]"
+      ? "outline-[#191C1C29] bg-[#CCE8E614] text-on-surface-variant.light"
       : "outline-outline.light text-outline.light bg-white";
   return (
     <div className="w-full my-4">
