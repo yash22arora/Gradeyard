@@ -4,11 +4,11 @@ export const fieldTypes = [
     label: "Text",
   },
   {
-    value: "range",
-    label: "Range",
+    value: "number",
+    label: "Number",
   },
   {
-    value: "select",
-    label: "Select",
+    value: "dropdown",
+    label: "Dropdown",
   },
 ];

@@ -14,6 +14,9 @@ const Select: React.FC<ISelectProps> = (props) => {
       disabled={rest.disabled}
       className={`mt-1 outline outline-[1.5px] focus:outline-2 w-full rounded-sm text-lg p-2 ${variantClass}  ${disabledClass} ${rest.className}`}
     >
+      <option selected disabled>
+        Select
+      </option>
       {options.map((option) => (
         <option key={option.value} value={option.value}>
           {option.label}
