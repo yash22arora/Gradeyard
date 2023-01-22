@@ -9,7 +9,7 @@ const CreateIndex: React.FC = () => {
     <div>
       <Title size="h1">Create a marksheet</Title>
       <div className="flex flex-row justify-between items-start mt-6">
-        <Slate className=" w-2/3 mr-8 h-screen">
+        <Slate className=" w-2/3 mr-8">
           <div className="flex flex-col items-start px-8 py-8">
             <Label htmlFor="marksheet_name">Name your marksheet</Label>
             <Input id="marksheet_name" />

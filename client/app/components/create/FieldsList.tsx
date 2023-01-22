@@ -25,7 +25,7 @@ const FieldsList: React.FC = () => {
     setFields((prev) => [
       ...prev,
       {
-        name: "Field " + (prev.length + 1),
+        name: "",
         type: "number",
       },
     ]);
@@ -61,7 +61,7 @@ const FieldsList: React.FC = () => {
           key={idx}
         >
           <Input
-            placeholder={field.name}
+            placeholder={"Field " + (idx + 1)}
             value={field.name}
             onChange={(e) => {
               fieldChangeHandler(idx, e.target.value, "name");
