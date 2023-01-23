@@ -2,25 +2,12 @@ import { useEffect, useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import Input from "../common/Input";
 import Select from "../common/Select";
-import { fieldTypes as options } from "./config";
-import { TFieldType } from "./types";
+import { DEFAULT_FIELDS, fieldTypes as options } from "./config";
+import { TFieldListItem, TFieldType } from "./types";
+import { FaTrash } from "react-icons/fa";
 
 const FieldsList: React.FC = () => {
-  const [fields, setFields] = useState<
-    {
-      name: string;
-      type: TFieldType;
-    }[]
-  >([
-    {
-      name: "Field 1",
-      type: "text",
-    },
-    {
-      name: "Field 2",
-      type: "number",
-    },
-  ]);
+  const [fields, setFields] = useState<TFieldListItem[]>(DEFAULT_FIELDS);
   const addFieldHandler = () => {
     setFields((prev) => [
       ...prev,
@@ -29,6 +16,13 @@ const FieldsList: React.FC = () => {
         type: "number",
       },
     ]);
+  };
+  const removeFieldHandler = (idx: number) => {
+    setFields((prev) => {
+      const newFields = [...prev];
+      newFields.splice(idx, 1);
+      return newFields;
+    });
   };
   const fieldChangeHandler = (
     idx: number,
@@ -75,14 +69,20 @@ const FieldsList: React.FC = () => {
               fieldChangeHandler(idx, e.currentTarget.value, "type");
             }}
           />
+          <span
+            onClick={() => removeFieldHandler(idx)}
+            className="ml-4 p-2 opacity-20 cursor-pointer hover:opacity-60 hover:text-on-error-container.light"
+          >
+            <FaTrash />
+          </span>
         </div>
       ))}
       <div
         onClick={addFieldHandler}
-        className="w-full flex flex-row items-center justify-center mt-4 p-4 cursor-pointer hover:bg-outline.light hover:bg-opacity-8"
+        className="w-full flex flex-row items-center justify-center mt-4 p-4 cursor-pointer hover:bg-outline.light hover:bg-opacity-8 text-outline.light"
       >
         <BsPlusLg size={14} />
-        <span className="ml-4 leading-none">Add Field</span>
+        <span className="ml-4 leading-none ">Add Field</span>
       </div>
     </>
   );
