@@ -5,6 +5,7 @@ export interface IInputProps
   variant?: TInputVariants;
   label?: string;
   type?: HTMLInputTypeAttribute;
+  containerClass?: HTMLDivElement["className"];
 }
 
 export type TInputVariants = "default" | "secondary";

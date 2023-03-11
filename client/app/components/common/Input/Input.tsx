@@ -1,7 +1,14 @@
 import type { IInputProps } from "./types";
 
 const Input: React.FC<IInputProps> = (props) => {
-  const { variant = "default", label, type, disabled, ...rest } = props;
+  const {
+    variant = "default",
+    label,
+    type,
+    disabled,
+    containerClass = "",
+    ...rest
+  } = props;
   const disabledClass = disabled
     ? "bg-on-tertiary-container.light bg-opacity-12"
     : "";
@@ -10,7 +17,7 @@ const Input: React.FC<IInputProps> = (props) => {
       ? "outline-[#191C1C29] bg-[#CCE8E614] text-on-surface-variant.light"
       : "outline-outline.light text-outline.light bg-white";
   return (
-    <div className="w-full my-4">
+    <div className={"w-full my-4 " + containerClass}>
       {label ? (
         <span className="text-on-surface.light text-xs font-light">
           {label.toUpperCase()}

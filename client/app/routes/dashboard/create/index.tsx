@@ -5,6 +5,7 @@ import Label from "~/components/common/Label/Label";
 import Slate from "~/components/common/Slate/Slate";
 import Title from "~/components/common/Title/Title";
 import FieldsList from "~/components/create/FieldsList";
+import ManualTeamList from "~/components/create/ManualTeamList";
 
 const CreateIndex: React.FC = () => {
   return (
@@ -22,12 +23,17 @@ const CreateIndex: React.FC = () => {
               You can either upload a CSV downloaded from Devfolio or can
               manually add teams.
             </span>
-            <div className="w-full h-24 border border-dashed border-outline.light bg-slate-100 bg-opacity-50 my-4"></div>
+            <div className="w-full h-24 border border-dashed border-outline.light bg-slate-100 bg-opacity-50 my-4 flex justify-center items-center">
+              <span className="text-sm text-outline.light font-light">
+                Drop CSV or click to upload
+              </span>
+            </div>
             <Divider label="OR" className="mx-0 opacity-50" />
+            <ManualTeamList />
             <Label className="mt-8">Invite Judges</Label>
             <Input placeholder="judge1@xyz.com, judge2@abc.in ..." />
             <div className="flec flex-row items-center justify-start w-full mt-4 text-outline.light">
-              <input type={"checkbox"} id="send-mails-judges" />
+              <input type={"checkbox"} checked id="send-mails-judges" />
               <span className="text-sm leading-none ml-2 relative bottom-[1px]">
                 <label htmlFor="send-mails-judges">
                   Send mails to judges inviting to the marksheet
