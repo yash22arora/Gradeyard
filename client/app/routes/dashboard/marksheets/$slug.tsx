@@ -1,11 +1,13 @@
+import { useAtom } from "jotai";
 import { IoChevronBackSharp } from "react-icons/io5";
 import { Outlet, useNavigate } from "react-router-dom";
+import { isJudgeAtom } from "~/atoms";
 import Button from "~/components/common/Button";
 import Title from "~/components/common/Title/Title";
 
 const MarksheetPage = () => {
   const navigate = useNavigate();
-  const isJudge = false;
+  const [isJudge, setIsJudge] = useAtom(isJudgeAtom);
   return (
     <div className="flex flex-col">
       <div
