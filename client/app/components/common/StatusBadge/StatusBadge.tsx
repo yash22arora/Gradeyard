@@ -6,6 +6,9 @@ const StatusBadge: React.FC<IStatusBadgeProps> = ({ status }) => {
     case "Active":
       colorClass = "bg-tertiary-container.light";
       break;
+    case "Marked":
+      colorClass = "bg-inverse-primary.light bg-opacity-50";
+      break;
     case "Compiled":
       colorClass = "bg-inverse-primary.light bg-opacity-50";
       break;

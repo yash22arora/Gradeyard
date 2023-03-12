@@ -1,9 +1,11 @@
 import { IoChevronBackSharp } from "react-icons/io5";
 import { Outlet, useNavigate } from "react-router-dom";
+import Button from "~/components/common/Button";
 import Title from "~/components/common/Title/Title";
 
 const MarksheetPage = () => {
   const navigate = useNavigate();
+  const isJudge = false;
   return (
     <div className="flex flex-col">
       <div
@@ -17,9 +19,16 @@ const MarksheetPage = () => {
         </div>
         <span>Save & go back</span>
       </div>
-      <Title size="h1" className="mb-6">
-        Marksheet Name
-      </Title>
+      <div className="flex flex-row items-center justify-between mb-6">
+        <Title size="h1" className="">
+          Marksheet Name
+        </Title>
+        {!isJudge && (
+          <div>
+            <Button className="bg-secondary.light">Convert to Draft</Button>
+          </div>
+        )}
+      </div>
       <Outlet />
     </div>
   );

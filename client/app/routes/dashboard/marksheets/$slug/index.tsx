@@ -1,16 +1,10 @@
-import { useState } from "react";
-import { IoChevronBackSharp } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
-import Button from "~/components/common/Button";
-import Label from "~/components/common/Label/Label";
-import Select from "~/components/common/Select";
-import Title from "~/components/common/Title/Title";
 import JudgePage from "~/components/marksheet/JudgePage";
+import OrganiserPage from "~/components/marksheet/OrganiserPage";
 
 const MarksheetPage = () => {
-  const isJudge = true;
+  const isJudge = false;
   if (isJudge) return <JudgePage />;
-  else return null;
+  else return <OrganiserPage />;
 };
 
 export default MarksheetPage;

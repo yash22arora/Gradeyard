@@ -77,7 +77,7 @@ const JudgePage: React.FC = () => {
             </div>
 
             <div className="flex flex-col mt-8 ">
-              <Label>Submission URL</Label>
+              <Label>Team Submission</Label>
               <a
                 href="https://notefy.servatom.com"
                 target={"_blank"}
@@ -93,7 +93,7 @@ const JudgePage: React.FC = () => {
           </div>
         </Slate>
       </div>
-      <div className="flex flex-row items-center mt-8 ml-auto justify-end w-1/2 gap-4">
+      <div className="flex flex-row items-center mt-16 ml-auto justify-end w-1/2 gap-8">
         <Button
           variant="primary"
           className="bg-tertiary-container.light text-on-tertiary-container.light"

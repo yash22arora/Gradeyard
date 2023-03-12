@@ -30,6 +30,12 @@ const CreateIndex: React.FC = () => {
             </div>
             <Divider label="OR" className="mx-0 opacity-50" />
             <ManualTeamList />
+            <Label className="mt-8">Pitching Link (Optional)</Label>
+            <span className="text-sm text-on-surface-variant.light mt-4 font-light">
+              If you have a hybrid or online pitching round, add the streaming
+              link here.
+            </span>
+            <Input placeholder="https://meet.google.com/abc-def-ghi" />
             <Label className="mt-8">Invite Judges</Label>
             <Input placeholder="judge1@xyz.com, judge2@abc.in ..." />
             <div className="flec flex-row items-center justify-start w-full mt-4 text-outline.light">
